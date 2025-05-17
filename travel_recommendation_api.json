@@ -53,13 +53,13 @@
       {
         "id": 1,
         "name": "Angkor Wat, Cambodia",
-        "imageUrl": "https://images.unsplash.com/photo-1549692520-acc6669e2f0c",
+        "imageUrl": "agnor_wat.jpeg",
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "https://images.unsplash.com/photo-1549692520-acc6669e2f0c",
+        "imageUrl": "taj_mahal.jpeg",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
