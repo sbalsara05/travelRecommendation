@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us - TravelBloom</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="contactUs.html">Contact Us</a>
+    </div>
+    <form class="search-form" action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Search destinations..." />
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions about your next adventure? We're here to help! Reach out to our team using any of the methods below.</p>
+
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      
+      <div class="contact-methods">
+        <div class="contact-method">
+          <h3>Email Us</h3>
+          <p><a href="mailto:info@travelbloom.com">info@travelbloom.com</a></p>
+          <p>We respond to all inquiries within 24 hours.</p>
+        </div>
+
+        <div class="contact-method">
+          <h3>Call Us</h3>
+          <p><a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+          <p>Available Monday-Friday, 9am-6pm EST</p>
+        </div>
+
+        <div class="contact-method">
+          <h3>Visit Our Office</h3>
+          <p>123 Traveler's Way<br>
+          Seattle, WA 98101<br>
+          United States</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a>
+    </div>
+    <p>&copy; 2025 TravelBloom. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

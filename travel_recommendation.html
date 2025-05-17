@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TravelBloom</title>
-<link rel="stylesheet" href="styles.css">
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<script src="./travel_recommendation.js"></script>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="contactUs.html">Contact Us</a>
-    </nav>
+  <nav>
+    <div class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="contactUs.html">Contact Us</a>
+    </div>
+    <form class="search-form" action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Search destinations..." />
+      <button type="submit">Search</button>
+    </form>
+  </nav>
 
-    <form action="search.html" method="GET">
-        <input type="text" name="query" placeholder="Search..." />
-        <button type="submit">Search</button>
-        <button type="submit">Reset</button>
-      </form>
-
-      <div class = "container">
-        <h1>Welcome to Travel Recommendation</h1>
-        <p>Plan your next adventure</p>
-      </div>
-    
+  <div class="container">
+    <h1>Welcome to TravelBloom</h1>
+    <p>Plan your next adventure with expert recommendations and insider tips</p>
 
     <section>
-        <h2>Top Destinations</h2>
-        <ul>
-          <li>Paris</li>
-          <li>Tokyo</li>
-          <li>New York</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Travel Tips</h2>
-        <p>Get the most out of your trip with our expert guides.</p>
-      </section>
+      <h2>Top Destinations</h2>
+      <ul>
+        <li>Paris, France</li>
+        <li>Tokyo, Japan</li>
+        <li>New York, USA</li>
+        <li>Bali, Indonesia</li>
+      </ul>
+    </section>
 
-    <footer>
-        <a href="#">Twitter</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">Facebook</a>
-      </footer>
+    <section>
+      <h2>Travel Tips</h2>
+      <p>Get the most out of your trip with our expert guides and local insights.</p>
+    </section>
+  </div>
 
+  <footer>
+    <div class="social-links">
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a>
+    </div>
+    <p>&copy; 2025 TravelBloom. All rights reserved.</p>
+  </footer>
+
+  <script src="./travel_recommendation.js"></script>
 </body>
 </html>

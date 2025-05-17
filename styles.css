@@ -1,68 +1,306 @@
 /* styles.css */
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-image: url('background.jpg'); /* Replace with your image */
+    background-image: url('background.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
+    line-height: 1.6;
   }
   
   .container {
-    padding: 2em;
-    max-width: 1000px;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   nav {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
   }
   
   nav a {
     color: white;
-    margin-right: 20px;
+    margin-right: 25px;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
   }
   
-  form {
-    margin: 1.5em 2em;
+  nav a:hover {
+    color: #00aaff;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin: 0;
   }
   
   input[type="text"] {
-    padding: 0.5em;
-    width: 200px;
-    border-radius: 5px;
+    padding: 0.6em 1em;
+    width: 220px;
+    border-radius: 20px;
     border: none;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   button {
-    padding: 0.5em 1em;
+    padding: 0.6em 1.2em;
     border: none;
     background-color: #00aaff;
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
   }
   
-  /* Content */
-  h1, p, section {
+  button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Content sections */
+  h1, h2, h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  section, p {
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 1em 2em;
-    margin: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5em 2em;
+    margin: 1.5em 2em;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  section {
+    border-left: 4px solid #00aaff;
   }
   
   /* Footer */
   footer {
     text-align: left;
     margin: 3em 2em 1em;
-    padding: 1em 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5em 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
   }
   
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 1em;
+    }
+    
+    .nav-links {
+      margin-bottom: 1em;
+    }
+    
+    .search-form {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    input[type="text"] {
+      width: 60%;
+    }
+    
+    section, p {
+      margin: 1em;
+      padding: 1em;
+    }
+  }
+
+  .team-section {
+    margin: 2em 2em 3em;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .team-member {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1.5em;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #00aaff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-member h3 {
+    color: #00aaff;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+  
+  .team-member h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  .team-member p {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1em;
+  }
+
+  .contact-info {
+    margin: 2em 2em 3em;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .contact-method {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1.5em;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #00aaff;
+  }
+  
+  .contact-method h3 {
+    color: #00aaff;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+  }
+  
+  .contact-method p {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 0.8em 0;
+    line-height: 1.6;
+  }
+  
+  .contact-method a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-method a:hover {
+    color: #00aaff;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form-section {
+    margin: 2em 2em 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #00aaff;
+  }
+  
+  .contact-form-section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group:nth-child(3),
+  .form-group:nth-child(4) {
+    grid-column: span 2;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: inherit;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #00aaff;
+  }
+  
+  .contact-form .submit-button {
+    grid-column: span 2;
+    padding: 1em;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+  }
+  
+  .contact-form .submit-button:hover {
+    background-color: #0088cc;
+  }
