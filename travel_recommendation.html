@@ -12,30 +12,45 @@
       <a href="aboutUs.html">About Us</a>
       <a href="contactUs.html">Contact Us</a>
     </div>
-    <form class="search-form" action="search.html" method="GET">
-      <input type="text" name="query" placeholder="Search destinations..." />
-      <button type="submit">Search</button>
-    </form>
+    <div class="search-form">
+      <input type="text" id="search-input" name="query" placeholder="Search destinations..." />
+      <button id="search-btn" type="button">Search</button>
+      <button id="clear-btn" type="button">Clear</button>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Welcome to TravelBloom</h1>
-    <p>Plan your next adventure with expert recommendations and insider tips</p>
+  <div class="main-content">
+    <div class="content-area">
+      <h1>EXPLORE DREAM DESTINATIONS</h1>
+      <p>Discover breathtaking landscapes, vibrant cultures, and unforgettable experiences. Whether you're chasing adventure or seeking relaxation, your dream vacation starts here.</p>
+      
+      <section>
+        <h2>Top Destinations</h2>
+        <div class="destination-cards">
+          <div class="destination-card">
+            <h3>Paris, France</h3>
+            <img src="paris.jpg" alt="Paris, France">
+            <p>The City of Light offers iconic landmarks, world-class cuisine, and charming streets to explore.</p>
+            <button class="select-btn">Select</button>
+          </div>
+          <div class="destination-card">
+            <h3>Tokyo, Japan</h3>
+            <img src="tokyo.jpg" alt="Tokyo, Japan">
+            <p>A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.</p>
+            <button class="select-btn">Select</button>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <h2>Top Destinations</h2>
-      <ul>
-        <li>Paris, France</li>
-        <li>Tokyo, Japan</li>
-        <li>New York, USA</li>
-        <li>Bali, Indonesia</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Travel Tips</h2>
-      <p>Get the most out of your trip with our expert guides and local insights.</p>
-    </section>
+      <section>
+        <h2>Travel Tips</h2>
+        <p>Get the most out of your trip with our expert guides and local insights.</p>
+      </section>
+    </div>
+    
+    <div class="search-results-area" id="search-results">
+      <!-- Search results will appear here -->
+    </div>
   </div>
 
   <footer>
@@ -47,6 +62,6 @@
     <p>&copy; 2025 TravelBloom. All rights reserved.</p>
   </footer>
 
-  <script src="./travel_recommendation.js"></script>
+  <script src="travel_recommendation.js"></script>
 </body>
 </html>
