@@ -417,8 +417,8 @@ body {
       grid-template-columns: 1fr;
     }
     
+    .form-group:nth-child(2),
     .form-group:nth-child(3),
-    .form-group:nth-child(4),
     .contact-form .submit-button {
       grid-column: span 1;
     }

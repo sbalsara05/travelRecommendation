@@ -14,8 +14,8 @@
     </div>
     <div class="search-form">
       <input type="text" id="search-input" name="query" placeholder="Search destinations..." />
-      <button id="search-btn" type="button">Search</button>
-      <button id="clear-btn" type="button">Clear</button>
+      <button type="button" id="search-btn" onclick="handleSearch()">Search</button>
+      <button type="button" id="clear-btn" onclick="handleClear()">Clear</button>
     </div>
   </nav>
 
@@ -31,13 +31,13 @@
             <h3>Paris, France</h3>
             <img src="paris.jpg" alt="Paris, France">
             <p>The City of Light offers iconic landmarks, world-class cuisine, and charming streets to explore.</p>
-            <button class="select-btn">Select</button>
+            <button class="select-btn" onclick="selectDestination('Paris, France')">Select</button>
           </div>
           <div class="destination-card">
             <h3>Tokyo, Japan</h3>
             <img src="tokyo.jpg" alt="Tokyo, Japan">
             <p>A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.</p>
-            <button class="select-btn">Select</button>
+            <button class="select-btn" onclick="selectDestination('Tokyo, Japan')">Select</button>
           </div>
         </div>
       </section>
